@@ -1,0 +1,16 @@
+def get_book_text(path):
+	with open(path) as f:
+		return f.read()
+
+def main():
+	path = "./books/frankenstein.txt"
+	book = get_book_text(path)
+	return book
+
+
+from stats import count_words
+from stats import lower_case
+
+
+book = main()
+count_words(book)
