@@ -1,7 +1,7 @@
 def count_words(book):
 	book = book.split()
 	num_words = len(book)
-	return(f"{num_words} words found in the document")
+	return num_words
 
 
 def lower_case(book):
